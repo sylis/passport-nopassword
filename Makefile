@@ -7,11 +7,11 @@ test:
 
 docs: docs/api.html
 
-docs/api.html: lib/passport-local/*.js
+docs/api.html: lib/passport-nopassword/*.js
 	dox \
-		--title Passport-Local \
-		--desc "Local username and password authentication strategy for Passport" \
-		$(shell find lib/passport-local/* -type f) > $@
+		--title Passport-Nopassword \
+		--desc "No-password authentication strategy for Passport" \
+		$(shell find lib/passport-nopassword/* -type f) > $@
 
 docclean:
 	rm -f docs/*.{1,html}
